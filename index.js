@@ -1,6 +1,12 @@
-function takeANumber(number, name){
-  number.push(name);
-  return (`Welcome, ${name}. You are number ${number.length} in line.`);
+// function takeANumber(number, name){
+//   number.push(name);
+//   return (`Welcome, ${name}. You are number ${number.length} in line.`);
+// }
+
+function takeANumber(number){//number does not have length
+  let newIndex = number.length+1; // 1
+  number.push(newIndex);
+  return `Welcome, you are ticket number ${newIndex}`;
 }
 
 function nowServing(katzDeliLine){
@@ -24,3 +30,5 @@ function currentLine(katzDeliLine){
   }
   return result.substring(0, result.length - 1);
 }
+
+
